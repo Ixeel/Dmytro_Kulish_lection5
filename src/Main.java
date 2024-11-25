@@ -1,17 +1,24 @@
 public class Main {
     public static void main(String[] args) {
+
         //Task 5.1
-        checkAge(18);
+       checkAge(18);
 
-        //Task 5.2
-        boolean result = isPerfectSquare(121);
-        System.out.println(result);
+//        Task 5.2
+      boolean result = isPerfectSquare(121);
+      System.out.println(result);
 
-        //Task 5.3
-        calculateSumUpToN(3);
+//        Task 5.3
+      calculateSumUpToN(3);
 
-        //Task 5.4
-        getGrade(5);
+//        Task 5.4
+      getGrade(5);
+
+
+//Task 5.5
+boolean resultPrime = isPrime(7);
+        System.out.println(resultPrime);
+
     }
 
     public static void checkAge(int age) {
@@ -64,4 +71,17 @@ public class Main {
         }
     }
 
-}
+    public static boolean isPrime(int number) {
+        if (number < 2) {
+            return false;
+        }
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+ }
+
